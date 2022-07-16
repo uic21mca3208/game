@@ -1,0 +1,40 @@
+<html>
+
+<head> 
+<style>
+textarea#d2
+{
+	height: 50%;
+	width: 100%;
+	background-color: rgb(239, 234, 234);
+}
+div#d1
+{
+	height: 50%;
+	width: 100%;
+	background-color: aliceblu;
+}
+</style>
+<script type="text/javascript">
+function second()
+{
+document.location="first.html";
+}
+function third()
+{
+x=document.getElementById("d1");
+y=document.getElementById("d2");
+x.innerHTML=y.value;
+}
+</script>
+
+<title> Live Html Interpreter </title>
+<head/>
+
+<body>
+	<div>Output</div>
+	<div id="d1"></div>
+	Code <textarea  id="d2" onkeyup="third()">  </textarea><br/>
+</body>
+
+</html>
